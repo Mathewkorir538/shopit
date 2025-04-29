@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Shopit</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="top-section">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="./shell logo.jpeg" alt="Shopit Logo" class="logo">
+                <h1>Shopit</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="help.html">Help</a>
+                <a href="cart.html">Cart</a>
+                <a href="login.html">Sign In</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div id="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <p id="cart-total">Total: $0.00</p>
+        <button id="checkout-btn">Checkout</button>
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-button-container">
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Shopit</h3>
+                <p>&copy; 2025 Shopit. All rights reserved.</p>
+                <p>Your one-stop shop for all your needs!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-media">
+                    <a href="#" target="_blank"><img src="./FECEBOOK LOGO2.jpeg" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="./TWITTER.jpeg" alt="Twitter"></a>
+                    <a href="#" target="_blank"><img src="./INSTAGRAM LOGO.jpeg" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Our Partners</h3>
+                <div class="partners">
+                    <img src="./cocacola.jpeg" alt="Partner 1">
+                    <img src="./Airtel logo.jpeg" alt="Partner 2">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript function to go back to the previous page
+        function goBack() {
+            history.back();
+        }
+    </script>
+    <script src="cart.js"></script>
+</body>
+</html>
