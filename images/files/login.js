@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
 
-        // Retrieve user data from localStorage
+       
         const user = JSON.parse(localStorage.getItem("user"));
 
         if (user && user.email === email && user.password === password) {
             alert(`Welcome back, ${user.username}!`);
-            window.location.href = "index.html"; // Redirect to homepage
+            window.location.href = "index.html";
         } else {
             alert("Invalid email or password. Please try again.");
         }

@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
 
-        // Save user data to localStorage
+       
         const user = { username, email, password };
         localStorage.setItem("user", JSON.stringify(user));
 
         alert("Registration successful! You can now log in.");
-        window.location.href = "login.html"; // Redirect to login page
+        window.location.href = "login.html"; 
     });
 });

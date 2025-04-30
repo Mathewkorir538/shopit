@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const cartItemsContainer = document.getElementById("cart-items");
     const cartTotal = document.getElementById("cart-total");
 
-    // Retrieve cart data from localStorage or initialize an empty array
+    
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    // Function to render cart items
+    
     function renderCart() {
-        cartItemsContainer.innerHTML = ""; // Clear existing items
+        cartItemsContainer.innerHTML = ""; 
         let total = 0;
 
         cart.forEach((item, index) => {
@@ -31,12 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
         cartTotal.textContent = `Total: $${total.toFixed(2)}`;
     }
 
-    // Function to save cart to localStorage
+    
     function saveCart() {
         localStorage.setItem("cart", JSON.stringify(cart));
     }
 
-    // Event listener for increasing quantity
+    
     cartItemsContainer.addEventListener("click", (event) => {
         if (event.target.classList.contains("increase-btn")) {
             const index = event.target.dataset.index;
@@ -45,19 +45,19 @@ document.addEventListener("DOMContentLoaded", () => {
             renderCart();
         }
 
-        // Event listener for decreasing quantity
+        
         if (event.target.classList.contains("decrease-btn")) {
             const index = event.target.dataset.index;
             if (cart[index].quantity > 1) {
                 cart[index].quantity--;
             } else {
-                cart.splice(index, 1); // Remove item if quantity is 0
+                cart.splice(index, 1); 
             }
             saveCart();
             renderCart();
         }
 
-        // Event listener for removing an item
+        
         if (event.target.classList.contains("remove-btn")) {
             const index = event.target.dataset.index;
             cart.splice(index, 1);
@@ -66,6 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Initial render
+    
     renderCart();
 });

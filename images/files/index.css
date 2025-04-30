@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -19,7 +19,7 @@ button {
     cursor: pointer;
 }
 
-/* Header Section */
+
 #top-section {
     background-color: #007BFF;
     color: white;
@@ -68,7 +68,7 @@ button {
     border-radius: 5px;
 }
 
-/* Category Filter Section */
+
 .category-filter {
     display: flex;
     justify-content: center;
@@ -88,7 +88,6 @@ button {
     background-color: #0056b3;
 }
 
-/* Product Sorting Section */
 .product-sorting {
     text-align: center;
     margin: 20px 0;
@@ -99,7 +98,7 @@ button {
     font-size: 16px;
 }
 
-/* Product List Section */
+
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -135,7 +134,7 @@ button {
     background-color: #0056b3;
 }
 
-/* Footer Section */
+
 footer {
     background-color: #f8f9fa;
     padding: 20px;
